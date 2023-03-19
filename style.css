@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #04012c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.parent{
+    background: #7f75f1;
+    width: 400px;
+    border-radius: 7px;
+    padding: 30px;
+}
+.parent :where(textarea , button){
+    width: 100%;
+    padding: 15px 19px;
+    margin: 10px 0;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+}
+textarea{
+    border: 1px solid #ccc !important;
+    background: #ffff;
+    color: #000;
+}
+button{
+    background: #28d;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s linear;
+}
+::selection{
+    background: #28d;
+}
